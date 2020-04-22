@@ -12,13 +12,26 @@
 <li>git add hello.html</li>
 <li>git commit -m "message"</li>
 <li>git status </li>
-<li>
 </ol>
+<p>Steps to fix merge conflicts</p>
+<ul>
+	<li>make changes to local copy of file and save it</li>
+	<li>git add <filename></li>
+		<li>git commit -m "message"</li>
+		<li>git push -- this fails saying
+			<p>hint: Updates were rejected because the tip of your current branch is behind
+hint: its remote counterpart. Integrate the remote changes (e.g.
+hint: 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.</p>
+		</li>
+		<li>git pull -- this fails with below error
+			<p>error: Pulling is not possible because you have unmerged files.
+hint: Fix them up in the work tree, and then use 'git add/rm <file>'
+hint: as appropriate to mark resolution and make a commit. </p>
+		</li>
+		<li><p>Fix conflicts by -- open the file and it shows your changes and remote file changes. You have to decide which changes you want to retain and save the file</p>
+			<li>git add file</li>
+			<li>git commit -m "message"</li>
+	</ul>
 	</body>
 </html>
-
-
-
-
-
-
